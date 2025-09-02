@@ -3,7 +3,7 @@ module github.com/AlexanderYastrebov/age-vanity-keygen
 go 1.25.0
 
 require (
-	github.com/AlexanderYastrebov/vanity25519 v0.0.0-20250818133714-beaf7a074bb8
+	github.com/AlexanderYastrebov/vanity25519 v0.0.0-20250902184634-03a25bd27049
 	golang.org/x/term v0.34.0
 )
 
