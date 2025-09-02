@@ -12,7 +12,7 @@ Install the tool locally and run:
 $ go install github.com/AlexanderYastrebov/age-vanity-keygen@latest
 
 $ age-vanity-keygen 23456
-Found age123456... in 0s after 15855390 attempts (43267922 attempts/s)
+Found age123456... in 0s after 17326213 attempts (65543471 attempts/s)
 # created: 2025-08-18T18:18:18+02:00
 # public key: age123456gpgacec4alqvqnfdacx6djhx98wzwn4l3eh5q5n5ec2evdsfzn7tn
 AGE-SECRET-KEY-1XRTF5T02CR2HEC29RAH29Y46DPHQ7EAPK5EEPYKTFE3682LPWSCS4CXJSX
@@ -29,7 +29,7 @@ $ docker run  ghcr.io/alexanderyastrebov/age-vanity-keygen:latest 23456
 
 ## Performance
 
-The tool checks ~40'000'000 keys per second on a laptop.
+The tool checks ~65'000'000 keys per second on a laptop.
 In practice, it finds a 6-character prefix within a minute.
 Each additional character increases search time by a factor of 32.
 
