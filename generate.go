@@ -90,7 +90,7 @@ func searchParallel(startPublicKey []byte, test func([]byte) bool) (*big.Int, ui
 
 	var attemptsTotal atomic.Uint64
 	var wg sync.WaitGroup
-	for range runtime.NumCPU() {
+	for range runtime.GOMAXPROCS(0) {
 		wg.Go(func() {
 			attempts := vanity25519.Search(ctx, startPublicKey, randBigInt(), 4096, test, func(_ []byte, offset *big.Int) {
 				if result.CompareAndSwap(nil, offset) {
